@@ -50,8 +50,8 @@
 }
 
 .header-nav a:hover {
-    color: #333; /* Темно-серый цвет */
-    background-color: #FFFFFF; /* Белый цвет */
+    color: #333;
+    background-color: #FFFFFF;
     border-radius: 5px;
 }
 
@@ -59,7 +59,7 @@
     display: none;
     cursor: pointer;
     font-size: 24px;
-    color: #FFFFFF; /* Белый цвет */
+    color: #FFFFFF;
     transition: transform 0.3s;
 }
 
