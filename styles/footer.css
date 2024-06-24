@@ -1,0 +1,109 @@
+.footer {
+    font-family: 'Roboto', sans-serif;
+    background-color: #34495E;
+    color: #ECF0F1;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto 20px;
+    text-align: left;
+
+}
+
+.footer-info, .footer-social, .footer-newsletter {
+    margin: 10px 0;
+}
+
+.footer-info h4, .footer-social h4, .footer-newsletter h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #1ABC9C;
+}
+
+.footer-info p, .footer-newsletter form {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    color: #ECF0F1;
+    transition: color 0.3s;
+}
+
+.footer-social ul li a:hover {
+    color: #1ABC9C;
+}
+
+.footer-newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-newsletter input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-newsletter input[type="email"]:focus {
+    border-color: #008080;
+    outline: none;
+}
+
+.footer-newsletter button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1ABC9C;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-newsletter button:hover {
+    background-color: #16A085;
+}
+
+.footer-bottom {
+    border-top: 1px solid #2C3E50;
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

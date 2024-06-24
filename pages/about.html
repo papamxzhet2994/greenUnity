@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/header.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>О нас</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="/"><img src="https://via.placeholder.com/50" alt="Eco Organization" /></a>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="/" onclick="toggleNav()">Главная</a></li>
+                <li><a href="../pages/about.html" onclick="toggleNav()">О нас</a></li>
+                <li><a href="../pages/projects.html" onclick="toggleNav()">Проекты</a></li>
+                <li><a href="../pages/gallery.html" onclick="toggleNav()">Галерея</a></li>
+                <li><a href="../pages/contact.html" onclick="toggleNav()">Связаться с нами</a></li>
+            </ul>
+        </div>
+        <div class="header-toggle" onclick="toggleNav()">
+            <i class="fas fa-grip-lines"></i>
+        </div>
+    </header>
+
+    <div class="about">
+        <h2>О нас</h2>
+        <section class="about-section">
+            <p>
+                Наша экологическая организация была основана в 2000 году с целью защиты окружающей среды и продвижения устойчивого развития.
+                Мы стремимся к сохранению природных ресурсов и улучшению качества жизни всех живых существ на нашей планете.
+            </p>
+        </section>
+        <section class="team-section">
+            <h2>Наша команда</h2>
+            <p>У нас есть команда профессионалов, страстных и преданных своему делу, работающих над достижением наших целей.</p>
+        </section>
+        <section class="mission-vision">
+            <div class="mission">
+                <h3>Миссия</h3>
+                <p>Продвигать экологическое сознание и устойчивое развитие через образовательные и практические инициативы.</p>
+            </div>
+            <div class="vision">
+                <h3>Видение</h3>
+                <p>Создать мир, в котором человечество живет в гармонии с природой, используя ресурсы устойчиво и ответственно.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <h4>Контакты</h4>
+            <p>Email: info@greenunity.com</p>
+            <p>Телефон: +123 456 7890</p>
+        </div>
+        <div class="footer-social">
+            <h4>Мы в соцсетях</h4>
+            <ul class="social-links">
+                <li><a href="#"><i class="fab fa-vk fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram fa-2x"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-newsletter">
+            <h4>Подписаться на новости</h4>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Ваш email" id="newsletter-email" required>
+                <button type="submit">Подписаться</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 GreenUnity. Все права защищены.</p>
+    </div>
+    <div id="toaster"></div>
+</footer>
+
+</body>
+</html>

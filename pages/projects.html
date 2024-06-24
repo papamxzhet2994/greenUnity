@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наши проекты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-css/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="../styles/projects.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../scripts/header.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/site.webmanifest">
+    <link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <a href="/"><img src="https://via.placeholder.com/50" alt="Eco Organization" /></a>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="/" onclick="toggleNav()">Главная</a></li>
+                <li><a href="../pages/about.html" onclick="toggleNav()">О нас</a></li>
+                <li><a href="../pages/projects.html" onclick="toggleNav()">Проекты</a></li>
+                <li><a href="../pages/gallery.html" onclick="toggleNav()">Галерея</a></li>
+                <li><a href="../pages/contact.html" onclick="toggleNav()">Связаться с нами</a></li>
+            </ul>
+        </div>
+        <div class="header-toggle" onclick="toggleNav()">
+            <i class="fas fa-grip-lines"></i>
+        </div>
+    </header>
+    <div class="projects">
+        <h2>Наши проекты</h2>
+        <div class="project-list" id="project-list">
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="https://via.placeholder.com/300x200" alt="Project Image">
+                </div>
+                <div class="project-info">
+                    <p>Описание проекта</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h4>Контакты</h4>
+                <p>Email: info@greenunity.com</p>
+                <p>Телефон: +123 456 7890</p>
+            </div>
+            <div class="footer-social">
+                <h4>Мы в соцсетях</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fab fa-vk fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram fa-2x"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Подписаться на новости</h4>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Ваш email" id="newsletter-email" required>
+                    <button type="submit">Подписаться</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 GreenUnity. Все права защищены.</p>
+        </div>
+        <div id="toaster"></div>
+    </footer>
+    
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                const projects = [
+                    { id: 1, image: "https://via.placeholder.com/300", name: "Проект 1", description: "Описание проекта 1", link: "https://example.com" },
+                    { id: 2, image: "https://via.placeholder.com/300", name: "Проект 2", description: "Описание проекта 2", link: "https://example.com" },
+                    { id: 3, image: "https://via.placeholder.com/300", name: "Проект 3", description: "Описание проекта 3", link: "https://example.com" },
+                    { id: 4, image: "https://via.placeholder.com/300", name: "Проект 4", description: "Описание проекта 4", link: "https://example.com" },
+                    { id: 5, image: "https://via.placeholder.com/300", name: "Проект 5", description: "Описание проекта 5", link: "https://example.com" },
+                    { id: 6, image: "https://via.placeholder.com/300", name: "Проект 6", description: "Описание проекта 6", link: "https://example.com" },
+                    { id: 7, image: "https://via.placeholder.com/300", name: "Проект 7", description: "Описание проекта 7", link: "https://example.com" },
+                    { id: 8, image: "https://via.placeholder.com/300", name: "Проект 8", description: "Описание проекта 8", link: "https://example.com" },
+                ];
+
+                const projectList = document.getElementById('project-list');
+                projectList.innerHTML = projects.map(project => `
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="${project.image}" alt="${project.name}">
+                        </div>
+                        <div class="project-info">
+                            <h3>${project.name}</h3>
+                            <p>${project.description}</p>
+                            <a href="${project.link}" target="_blank" rel="noopener noreferrer">Открыть проект</a>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        );
+    </script>
+</body>
+</html>
